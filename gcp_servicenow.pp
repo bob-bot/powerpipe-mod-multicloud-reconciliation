@@ -24,7 +24,7 @@ control "gcp_servicenow_gcp_project" {
         FROM
             servicenow_cmdb_ci
         WHERE
-            sys_class_name LIKE '%turbot_guardrails_gcp_project%'
+            sys_class_name LIKE '%_guardrails_gcp_project%'
     ),
     gcp_projects AS (
         SELECT
@@ -67,7 +67,7 @@ control "gcp_servicenow_gcp_storage_bucket" {
         FROM
             servicenow_cmdb_ci
         WHERE
-            sys_class_name LIKE '%turbot_guardrails_gcp_storage_bucket%'
+            sys_class_name LIKE '%_guardrails_gcp_storage_bucket%'
     ),
     gcp_buckets AS (
         SELECT

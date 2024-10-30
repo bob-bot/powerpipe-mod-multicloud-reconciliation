@@ -7,9 +7,12 @@ mod "multicloud_resource_reconciliation" {
   color = "#4285F4"
   # documentation = file("./docs/index.md")
   # icon       = "/images/mods/gcp/gcp-icon.svg"
-  categories = ["public cloud", "gcp", "guardrails", "compliance"]
+  categories = ["public cloud", "azure", "gcp", "guardrails", "compliance"]
 
   require {
+    plugin "azure" {
+      min_version = "0.66.0"
+    }
     plugin "gcp" {
       min_version = "0.57.0"
     }
